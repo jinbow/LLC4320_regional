@@ -4,8 +4,7 @@ Routines to manipulate ECCO simulation 1/48 (LLC4320) with AMES supercomputers
 Prerequist 
 
 1. Install miniconda in the home directory
-1. 
-```
+1. ```
 source miniconda3/bin/activate
 module load pkgsrc/2021Q2 mpi-hpe/mpt
 ```
