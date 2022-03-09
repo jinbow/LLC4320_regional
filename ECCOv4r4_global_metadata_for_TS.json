@@ -1,0 +1,265 @@
+[
+   {
+      "name": "acknowledgement",
+      "type": "s",
+      "value": "This research was carried out by the Jet Propulsion Laboratory, managed by the California Institute of Technology under a contract with the National Aeronautics and Space Administration."
+   },
+   {
+      "name": "author",
+      "type": "s",
+      "value": "Dimitris Menemenlis et al."
+   },
+   {
+      "name": "contributor",
+      "value": "Chris Hill, Christopher E. Henze, Jinbo Wang, Ian Fenty"
+   },
+   {
+      "name": "contributor_role",
+      "value": "MITgcm developer, AMES supercomputer support, creator of netcdf files for PODAAC, metadata"
+   },
+   {
+      "name": "cdm_data_type",
+      "type": "s",
+      "value": "Grid"
+   },
+   {
+      "name": "Conventions",
+      "type": "s",
+      "value": "CF-1.7, ACDD-1.3"
+   },
+   {
+      "name": "creator_email",
+      "type": "s",
+      "value": "menemenlis@jpl.nasa.gov"
+   },
+   {
+      "name": "creator_institution",
+      "type": "s",
+      "value": "NASA Jet Propulsion Laboratory (JPL)"
+   },
+   {
+      "name": "creator_name",
+      "type": "s",
+      "value": "Dimitris Menemelis et al."
+   },
+   {
+      "name": "creator_type",
+      "type": "s",
+      "value": "group"
+   },
+   {
+      "name": "creator_url",
+      "type": "s",
+      "value": "https://science.jpl.nasa.gov/people/Menemenlis/"
+   },
+   {
+      "name": "date_created",
+      "type": "s",
+      "value": "2021-01-20T00:00:00"
+   },
+   {
+      "name": "date_issued",
+      "type": "s",
+      "value": "2021-01-20T00:00:00"
+   },
+   {
+      "name": "date_metadata_modified",
+      "type": "s",
+      "value": "2021-01-20T00:00:00"
+   },
+   {
+      "name": "geospatial_lat_max",
+      "type": "f",
+      "value": 90
+   },
+   {
+      "name": "geospatial_lat_min",
+      "type": "f",
+      "value": -90
+   },
+   {
+      "name": "geospatial_lat_units",
+      "type": "s",
+      "value": "degrees_north"
+   },
+   {
+      "name": "geospatial_lon_max",
+      "type": "f",
+      "value": 180
+   },
+   {
+      "name": "geospatial_lon_min",
+      "type": "f",
+      "value": -180
+   },
+   {
+      "name": "geospatial_lon_units",
+      "type": "s",
+      "value": "degrees_east"
+   },
+   {
+      "name": "geospatial_bounds_crs",
+      "type": "s",
+      "value": "EPSG:4326"
+   },
+   {
+      "name": "geospatial_vertical_max",
+      "type": "f",
+      "value": "0"
+   },
+   {
+      "name": "geospatial_vertical_min",
+      "type": "f",
+      "value": -6134.5
+   },
+   {
+      "name": "geospatial_vertical_positive",
+      "type": "s",
+      "value": "up"
+   },
+   {
+      "name": "geospatial_vertical_resolution",
+      "type": "s",
+      "value": "variable"
+   },
+   {
+      "name": "geospatial_vertical_units",
+      "type": "s",
+      "value": "meter"
+   },
+   {
+      "name": "history",
+      "type": "s",
+      "value": "Inaugural release of LLC4320 regions to PO.DAAC to support pre-SWOT activities."
+   },
+   {
+      "name": "id",
+      "type": "s",
+      "value": "TBD_DOI"
+   },   
+   {
+      "name": "institution",
+      "type": "s",
+      "value": "NASA Jet Propulsion Laboratory (JPL)"
+   },
+   {
+      "name": "instrument_vocabulary",
+      "type": "s",
+      "value": "GCMD instrument keywords"
+   },
+   {
+      "name": "keywords",
+      "type": "s",
+      "value": "EARTH SCIENCE SERVICES > MODELS > EARTH SCIENCE MODELS"
+   },
+   {
+      "name": "keywords_vocabulary",
+      "type": "s",
+      "value": "NASA Global Change Master Directory (GCMD) Science Keywords"
+   },
+   {
+      "name": "license",
+      "type": "s",
+      "value": "Public Domain"
+   },
+   {
+      "name": "metadata_link",
+      "type": "s",
+      "value": "TBD_DATASET"
+   },
+   {
+      "name": "naming_authority",
+      "type": "s",
+      "value": "gov.nasa.jpl"
+   },
+   {
+      "name": "platform_vocabulary",
+      "type": "s",
+      "value": "GCMD platform keywords"
+   },
+   {
+      "name": "processing_level",
+      "type": "s",
+      "value": "L4"
+   },
+   {
+      "name": "product_time_coverage_end",
+      "type": "s",
+      "value": "2012-11-15T00:00:00"
+   },
+   {
+      "name": "product_time_coverage_start",
+      "type": "s",
+      "value": "2011-09-13T00:00:00"
+   },
+   {
+      "name": "product_version",
+      "type": "s",
+      "value": "1.0"
+   },
+   {
+      "name": "program",
+      "type": "s",
+      "value": "NASA Physical Oceanography"
+   },
+   {
+      "name": "project",
+      "type": "s",
+      "value": "Surface Water and Ocean Topography (SWOT) and Estimating the Circulation and Climate of the Ocean (ECCO)"
+   },
+   {
+      "name": "publisher_email",
+      "type": "s",
+      "value": "podaac@podaac.jpl.nasa.gov"
+   },
+   {
+      "name": "publisher_institution",
+      "type": "s",
+      "value": "PO.DAAC"
+   },
+   {
+      "name": "publisher_name",
+      "type": "s",
+      "value": "Physical Oceanography Distributed Active Archive Center (PO.DAAC)"
+   },
+   {
+      "name": "publisher_type",
+      "type": "s",
+      "value": "institution"
+   },
+   {
+      "name": "publisher_url",
+      "type": "s",
+      "value": "https://podaac.jpl.nasa.gov"
+   },
+   {
+      "name": "source",
+      "type": "s",
+      "value": "MITgcm simulation"
+   },
+   {
+      "name": "standard_name_vocabulary",
+      "type": "s",
+      "value": "NetCDF Climate and Forecast (CF) Metadata Convention"
+   },
+   {
+      "name": "summary",
+      "type": "s",
+      "value":"This is a subset of a global ocean simulation named LLC4320 based on MITgcm. The simulation has a norminal 1/48 deg horizontal resolution, about 2km in the mid-latitudes. The model has 90 vertical levels, with about 1-m vertical resolution at the surface and 30 m down to 500 m, for better resolving the upper-ocean processes. The model has zero parameterized horizontal diffusivity. In the vertical direction, the K-profile parameterization (KPP; Large et al. 1994) is used for boundary layer turbulent mixing. The model is forced by the 6-hourly ERA-Interim atmosphere reanalysis. In addition, a synthetic surface pressure field consisting of the 16 most dominant tidal constituents is used to dynamically mimic the tidal forcing."
+   },
+   {
+      "name": "time_coverage_end",
+      "type": "s",
+      "value": "TBD_DATASET"
+   },
+   {
+      "name": "time_coverage_start",
+      "type": "s",
+      "value": "TBD_DATASET"
+   },
+   {
+      "name": "title",
+      "type": "s",
+      "value": "LLC4320 regional"
+   }
+]
