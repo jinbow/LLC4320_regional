@@ -15,4 +15,9 @@ module load pkgsrc/2021Q2 mpi-hpe/mpt
 
 From the cluster, run ```mpiexec -np ??? python convert_netcdf_mpi.py```. The ??? is the number of parallel processes you will use. You may need to change the settings in the main routine of the program. 
 
+
 The output files are saved in the folder: ```/nobackup/jwang23/llc4320_stripe/regional.subsets.adac.netcdf```
+
+Acknowledgment:
+
+The json files for the MITgcm output are 'donated' by Ian Fenty. 
