@@ -1,5 +1,5 @@
 # LLC4320_regional
-Routines to manipulate ECCO simulation 1/48 (LLC4320) with AMES supercomputers
+A tool to convert the regional LLC4320 to netcdf files. It only works without modification within AMES supercomputer. 
 
 Prerequist 
 
