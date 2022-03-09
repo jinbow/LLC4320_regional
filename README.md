@@ -12,3 +12,6 @@ module load pkgsrc/2021Q2 mpi-hpe/mpt
 1. Run from interactive cluster
  1. Start an interactive cluster:
 ```qsub -I -q devel -lselect=$1:ncpus=$2:model=$3,walltime=2:00:00 ```
+
+From the cluster, run ```mpiexec -np ??? python convert_netcdf_mpi.py```. The ??? is the number of parallel processes you will use. You may need to change the settings in the main routine of the program. 
+
