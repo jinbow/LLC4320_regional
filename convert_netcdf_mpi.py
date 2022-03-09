@@ -238,7 +238,7 @@ def get_region(region_name,comm):
         ii1=rank*nn+nn
 
     #for testing and manual indexing
-    ii0,ii1=rank,rank+1
+    ii0,ii1=rank+215,rank+1+215
 
     for day in days[ii0:ii1]:
         dout=read_grid(pth+'/'+region_name,nx,ny,nz)
