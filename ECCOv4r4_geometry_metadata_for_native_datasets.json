@@ -1,0 +1,458 @@
+[   
+   {
+      "name": "Depth",
+      "standard_name" : "sea_floor_depth_below_geoid",
+      "long_name": "model seafloor depth below ocean surface at rest",
+      "comments_1": "Model sea surface height (SSH) of 0m corresponds to an ocean surface at rest relative to the geoid. Depth corresponds to seafloor depth below geoid.",
+      "comments_2": "Note: the MITgcm used by ECCO V4r4 implements 'partial cells' so the actual model seafloor depth may differ from the seafloor depth provided by the input bathymetry file.",
+      "units": "m",
+      "grid_location": "c",
+      "coverage_content_type": "modelResult"
+   },
+   {
+      "name": "CS",
+      "long_name": "cosine of tracer grid cell orientation vs geographical north",
+      "comments_1": "CS and SN are required to calculate the geographic (meridional, zonal) components of vectors on the curvilinear model grid",
+      "comments_2": "Note: for vector R with components R_x and R_y: R_{east} = CS R_x - SN R_y.  R_{north} = SN R_x + CS R_y",
+      "units": "1",
+      "grid_location": "c",
+      "coverage_content_type": "modelResult"
+   },
+   {
+      "name": "SN",
+      "long_name": "sine of tracer grid cell orientation vs geographical north",
+      "comments_1": "CS and SN are required to calculate the geographic (meridional, zonal) components of vectors on the curvilinear model grid",
+      "comments_2": "Note: for vector R with components R_x and R_y in local grid directions x and y, the geographical eastward component R_{east} = CS R_x - SN R_y. The geographical northward component R_{north} = SN R_x + CS R_y.",
+      "units": "1",
+      "grid_location": "c",
+      "coverage_content_type": "modelResult"
+   },
+   {
+      "name": "rA",
+      "standard_name" : "cell_area",
+      "long_name": "area of tracer grid cell",
+      "comments_1": "",
+      "comments_2": "",
+      "units": "m2",
+      "grid_location": "c",
+      "coverage_content_type": "modelResult"
+   },   
+   {
+      "name": "V2zonDir",
+      "standard_name": "cell_area",
+      "long_name": "Angle ???",
+      "units": "m2",
+      "comments_1": "Model 'u' grid cells are staggered in space between adjacent tracer grid cells in the 'y' direction. 'u' grid cell (i,j) is situated at the 'south' edge of tracer grid cell (i, j).",
+      "comments_2": "Note: 'south' does not correspond to geographic orientation but is used for convenience to describe the computational grid. See MITgcm documentation for details.",
+      "grid_location": "v",
+      "coverage_content_type": "modelResult"
+   },
+   {
+      "name": "U2zonDir",
+      "standard_name": "cell_area",
+      "long_name": "Angle ???",
+      "units": "m2",
+      "comments_1": "Model 'u' grid cells are staggered in space between adjacent tracer grid cells in the 'y' direction. 'u' grid cell (i,j) is situated at the 'south' edge of tracer grid cell (i, j).",
+      "comments_2": "Note: 'south' does not correspond to geographic orientation but is used for convenience to describe the computational grid. See MITgcm documentation for details.",
+      "grid_location": "v",
+      "coverage_content_type": "modelResult"
+   },
+   {
+      "name": "AngleSN",
+      "long_name": "Sin of grid orientation angle",
+      "comments_1": "AngleCS and AngleSN are required to calculate the geographic (meridional, zonal) components of vectors on the curvilinear model grid",
+      "comments_2": "Note: for vector R with components R_x and R_y in local grid directions x and y, the geographical eastward component R_{east} = CS R_x - SN R_y. The geographical northward component R_{north} = SN R_x + CS R_y.",
+      "long_name": "AngleSN",
+      "units": "m2",
+      "grid_location": "v",
+      "coverage_content_type": "modelResult"
+   },
+   {
+      "name": "AngleCS",
+      "long_name": "Cos of grid orientation angle",
+      "comments_1": "AngleCS and AngleSN are required to calculate the geographic (meridional, zonal) components of vectors on the curvilinear model grid",
+      "comments_2": "Note: for vector R with components R_x and R_y: R_{east} = CS R_x - SN R_y.  R_{north} = SN R_x + CS R_y",
+      "long_name": "AngleCS",
+      "units": "m2",
+      "grid_location": "v",
+      "coverage_content_type": "modelResult"
+   },
+   {
+      "name": "rAs",
+      "standard_name": "cell_area",
+      "long_name": "area of 'u' grid cell",
+      "units": "m2",
+      "comments_1": "Model 'u' grid cells are staggered in space between adjacent tracer grid cells in the 'y' direction. 'u' grid cell (i,j) is situated at the 'south' edge of tracer grid cell (i, j).",
+      "comments_2": "Note: 'south' does not correspond to geographic orientation but is used for convenience to describe the computational grid. See MITgcm documentation for details.",
+      "grid_location": "v",
+      "coverage_content_type": "modelResult"
+   },
+   {
+      "name": "rAw",
+      "standard_name" : "cell_area",
+      "long_name": "area of 'v' grid cell",
+      "units": "m2",
+      "comments_1": "Model 'v' grid cells are staggered in space between adjacent tracer grid cells in the 'x' direction. 'v' grid cell (i,j) is situated at the 'west' edge of tracer grid cell (i, j).",
+      "comments_2": "Note: 'west' does not correspond to geographic orientation but is used for convenience to describe the computational grid. See MITgcm documentation for details.",
+      "grid_location": "u",
+      "coverage_content_type": "modelResult"
+   },
+   {
+      "name": "rAz",
+      "standard_name" : "cell_area",
+      "long_name": "area of vorticity 'g' grid cell",
+      "comments_1": "Vorticity cells are staggered in space relative to tracer cells, nominally situated on tracer cell corners. Vorticity cell (i,j) is located at the 'southwest' corner of tracer grid cell (i, j).",
+      "comments_2": "Note: 'southwest' does not correspond to geographic orientation but is used for convenience to describe the computational grid. See MITgcm documentation for details.",
+      "units": "m2",
+      "grid_location": "z",
+      "coverage_content_type": "modelResult"
+   },   
+   {
+      "name": "dxC",
+      "long_name": "distance between centers of adjacent tracer grid cells in the 'x' direction",
+      "units": "m",
+      "comments_1": "Alternatively, the length of 'north' side of vorticity grid cells",
+      "comments_2": "Note: 'north' does not correspond to geographic orientation but is used for convenience to describe the computational grid. See MITgcm documentation for details.",
+      "grid_location": "u",
+      "coverage_content_type": "modelResult"
+   },
+   {
+      "name": "dyC",
+      "long_name": "distance between centers of adjacent tracer grid cells in the 'y' direction",
+      "units": "m",
+      "comments_1": "Alternatively, the length of 'east' side of vorticity grid cells",
+      "comments_2": "Note: 'east' does not correspond to geographic orientation but is used for convenience to describe the computational grid. See MITgcm documentation for details.",
+      "grid_location": "v",
+      "coverage_content_type": "modelResult"
+   },
+   {
+      "name": "dxG",
+      "long_name": "distance between 'southwest' and 'southeast' corners of the tracer grid cell",
+      "comments_1": "Alternatively, the length of 'south' side of tracer grid cell.",
+      "comments_2": "Note: 'south', 'southwest', and 'southeast' do not correspond to geographic orientation but are used for convenience to describe the computational grid. See MITgcm documentation for details.",
+      "units": "m",
+      "grid_location": "v",
+      "coverage_content_type": "modelResult"
+   },
+   {
+      "name": "dyG",
+      "long_name": "distance between 'southwest' and 'northwest' corners of the tracer grid cell",
+      "comments_1": "Alternatively, the length of 'west' side of tracer grid cell.",
+      "comments_2": "Note: 'west, 'southwest', and 'northwest' do not correspond to geographic orientation but are used for convenience to describe the computational grid. See MITgcm documentation for details.",
+      "units": "m",
+      "grid_location": "u",
+      "coverage_content_type": "modelResult"
+   },
+   {
+      "name": "drC",
+      "long_name": "distance between the centers of adjacent tracer grid cells in the 'z' direction",
+      "units": "m",
+      "comments_1": "The first element corresponds to the distance between the depth of the center of the uppermost model grid cell and the surface.",
+      "comments_2": "",
+      "grid_location": "w",
+      "coverage_content_type": "modelResult"
+   },
+   {
+      "name": "drF",
+      "standard_name": "cell_thickness",
+      "long_name": "distance between the upper and lower interfaces of the model grid cell",
+      "units": "m",
+      "comments_1": "Nominal grid cell thickness.",
+      "comments_2": "Note: in the z* coordinate system used in ECCO V4, actual tracer grid cell thickness, h, varies through time as h(i,j,k,t)= drF(k) hfacC(i,j,k,t).",
+      "grid_location": "c",
+      "coverage_content_type": "modelResult"
+   },
+   {
+      "name": "PHrefC",
+      "long_name": "reference ocean hydrostatic pressure at tracer grid cell center",
+      "units": "m2 s-2",
+      "comments_1": "PHrefC = p_ref (k) / rhoConst = rhoConst g z(k) / rhoConst = g z(k), where p_ref(k) is reference hydrostatic ocean pressure at center of tracer grid cell k, rhoConst is reference density (1029 kg m-3), g is acceleration due to gravity (9.81 m s-2), and z(k) is depth at center of tracer grid cell k. Units: p:[kg m-1 s-2], rhoConst:[kg m-3], g:[m s-2], z_m(t):[m].",
+      "comments_2": "Note: does not include atmospheric pressure loading. Quantity referred to in some contexts as hydrostatic pressure potential. PHIHYDcR is anomaly of PHrefC.",
+      "grid_location": "c",
+      "coverage_content_type": "modelResult"
+   },
+   {
+      "name": "PHrefF",
+      "long_name": "reference ocean hydrostatic pressure at tracer grid cell top/bottom interface",
+      "units": "m2 s-2",
+      "comments_1": "PHrefF = p_ref (k_l) / rhoConst = rhoConst g z(k_l) / rhoConst = g z(k_l), where p_ref(k_l) is reference hydrostatic ocean pressure at lower interface of tracer grid cell k, rhoConst is reference density (1029 kg m-3), g is acceleration due to gravity (9.81 m s-2), and z(k) is depth at center of tracer grid cell k. Units: p:[kg m-1 s-2], rhoConst:[kg m-3], g:[m s-2], z_m(t):[m].",
+      "comments_2": "Note: does not include atmospheric pressure loading. Quantity referred to in some contexts as hydrostatic pressure potential. See PHrefC",
+      "grid_location": "c",
+      "coverage_content_type": "modelResult"
+   },
+   {
+      "name": "hFacC",
+      "long_name": "vertical open fraction of tracer grid cell",
+      "units": "1",
+      "comments_1": "Tracer grid cells may be fractionally closed in the vertical. The open vertical fraction is hFacC. The model allows for partially-filled cells to represent topographic variations more smoothly (hFacC < 1). Completely closed (dry) tracer grid cells have hFacC = 0.",
+      "comments_2": "Note: the model z* coordinate system allows hFacC to vary through time. A time-invariant hFacC field is provided for reference.",
+      "grid_location": "c",
+      "coverage_content_type": "modelResult"
+   },
+   {
+      "name": "hFacW",
+      "long_name": "vertical open fraction of tracer grid cell 'west' face",
+      "units": "1",
+      "comments_1": "The 'west' face of tracer grid cells may be fractionally closed in the vertical. The open vertical fraction is hFacW. The model allows for partially-filled cells for smoother representation of seafloor topography. Tracer grid cells adjacent in the 'x' direction that are partially closed in the vertical have hFacW < 1. The model z* coordinate system used by the model permits hFacC, and therefore hFacW, to vary through time. A time-invariant hFacW field is provided for reference.",
+      "comments_2": "Note: The term 'west' does not correspond to geographic orientation but is used for convenience to describe the computational grid. See MITgcm documentation for details.",
+      "grid_location": "u",
+      "coverage_content_type": "modelResult"
+   },
+   {
+      "name": "hFacS",
+      "long_name": "vertical open fraction of tracer grid cell 'south' face",
+      "units": "1",
+      "comments_1": "The 'south' face of tracer grid cells may be fractionally closed in the vertical. The open vertical fraction is hFacS. The model allows for partially-filled cells for smoother representation of seafloor topography. Tracer grid cells adjacent in the 'y' direction that are partially closed in the vertical have hFacS < 1. The model z* coordinate system used by the model permits hFacC, and therefore hFacS, to vary through time. A time-invariant hFacS field is provided for reference.",
+      "comments_2": "Note:  The term 'south' does not correspond to geographic orientation but is used for convenience to describe the computational grid. See MITgcm documentation for details.",
+      "grid_location": "v",
+      "coverage_content_type": "modelResult"
+   },
+   {
+      "name": "maskC",
+      "long_name": "wet/dry boolean mask for tracer grid cell",
+      "comments_1": "True for tracer grid cells with nonzero open vertical fraction (hFacC > 0), otherwise False. Although hFacC can vary though time, cells will never close if starting open and will never open if starting closed: hFacC(i,j,k,t) > 0 for all t, if hFacC(i,j,k,t=0) and hFacC(i,j,k,t) = 0 for all t, if hFacC(i,j,k,t=0) = 0. Therefore, maskC is time invariant.",
+      "comments_2": "",
+      "grid_location": "c",
+      "coverage_content_type": "modelResult"
+   },
+   {
+      "name": "maskW",
+      "long_name": "wet/dry boolean mask for 'west' face of tracer grid cell",
+      "comments_1": "True for grid cells with nonzero open vertical fraction along their 'west' face (hFacW > 0), otherwise False. Although hFacW can vary though time, cells will never close if starting open and will never open if starting closed: hFacW(i,j,k,t) > 0 for all t, if hFacW(i,j,k,t=0) and hFacW(i,j,k,t) = 0 for all t, if hFacW(i,j,k,t=0) = 0. Therefore, maskW is time invariant.",
+      "comments_2": "Note: ",
+      "grid_location": "u",
+      "coverage_content_type": "modelResult"
+   },
+   {
+      "name": "maskS",
+      "long_name": "wet/dry boolean mask for 'south' face of tracer grid cell",
+      "comments_1": "True for grid cells with nonzero open vertical fraction along their 'south' face (hFacS > 0), otherwise False. Although hFacS can vary though time, cells will never close if starting open and will never open if starting closed: hFacS(i,j,k,t) > 0 for all t, if hFacS(i,j,k,t=0) and hFacS(i,j,k,t) = 0 for all t, if hFacS(i,j,k,t=0) = 0. Therefore, maskS is time invariant.",
+      "comments_2": "Note: ",
+      "grid_location": "v",
+      "coverage_content_type": "modelResult"
+   },
+   {
+      "name": "time",
+      "standard_name": "time",
+      "long_name": "time of snapshot",
+      "units": "hours since 1992-01-01 12:00:00",
+      "bounds": "time_bnds",
+      "coverage_content_type": "coordinate"
+   },
+   {
+      "name": "time_bnds",
+      "long_name": "time for snapshots",
+      "comment" : "time and time_bnds are the same for snapshots",
+      "units": "hours since 1992-01-01 12:00:00",
+      "coverage_content_type": "coordinate"
+   },
+   {
+      "name": "time_step",
+      "long_name": "model timestep at end of averaging period or model timestep at snapshot.",
+      "comment": "The ECCO V4r4 model uses 1 hour timesteps starting from 1992-01-01T12:00:00",
+      "units":"hours",
+      "coverage_content_type": "coordinate"
+   },
+   {
+      "name": "nb",
+      "long_name": "grid index for coordinate bounds",
+      "coverage_content_type": "coordinate"
+   },
+   {
+      "name": "i",
+      "long_name": "grid index in x for variables at tracer and 'v' locations",
+      "comment": "In the Arakawa C-grid system, tracer (e.g., THETA) and 'v' variables (e.g., VVEL) have the same x coordinate on the model grid.",
+      "axis": "X",
+      "coverage_content_type": "coordinate"
+   },
+   {
+      "name": "i_g",
+      "long_name": "grid index in x for variables at 'u' and 'g' locations",
+      "comment": "In the Arakawa C-grid system, 'u' (e.g., UVEL) and 'g' variables (e.g., XG) have the same x coordinate on the model grid.",
+      "coverage_content_type": "coordinate"
+   },
+   {
+      "name": "j",
+      "long_name": "grid index in y for variables at tracer and 'u' locations",
+      "comment": "In the Arakawa C-grid system, tracer (e.g., THETA) and 'u' variables (e.g., UVEL) have the same y coordinate on the model grid.",
+      "axis": "Y",
+      "coverage_content_type": "coordinate"
+   },
+   {
+      "name": "j_g",
+      "long_name": "grid index in y for variables at 'v' and 'g' locations",
+      "comment": "In the Arakawa C-grid system, 'v' (e.g., VVEL) and 'g' variables (e.g., XG) have the same y coordinate.",
+      "coverage_content_type": "coordinate"
+   },
+   {
+      "name": "k",
+      "long_name": "grid index in z for tracer variables",
+      "axis": "Z",
+      "coverage_content_type": "coordinate"
+   },
+   {
+      "name": "k_u",
+      "long_name": "grid index in z for variables at lower 'w' location",
+      "comment": "First index corresponds to 'w' location at the bottom of the uppermost model tracer cell.",
+      "coverage_content_type": "coordinate"
+   },   
+   {
+      "name": "k_l",
+      "long_name": "grid index in z for variables at upper 'w' location",
+      "comment": "First index corresponds to 'w' location at the top of the uppermost model tracer cell.",
+      "coverage_content_type": "coordinate"
+   },   
+   {
+      "name": "k_p1",
+      "long_name": "grid index in z for variables at 'w' locations",
+      "comment": "Includes top of uppermost model tracer cell (k_p1=0) and bottom of lowermost tracer cell (k_p1=51).",
+      "coverage_content_type": "coordinate"
+   },
+   {
+      "name": "tile",
+      "long_name": "lat-lon-cap tile index",
+      "comment": "The ECCO V4 horizontal model grid is divided into 13 tiles of 90x90 cells for convenience.",
+      "coverage_content_type": "coordinate"
+   },
+   
+   {
+      "name": "RAZ",
+      "long_name": "vertical face area of vorticity points",
+      "comment": "nonuniform grid spacing",
+      "units": "m2",
+      "coverage_content_type": "coordinate"
+   },
+   {
+      "name": "DXG",
+      "long_name": "cell_x_size_at_v_location",
+      "comment": "nonuniform grid spacing",
+      "units": "m",
+      "coverage_content_type": "coordinate"
+   },
+   {
+      "name": "DYG",
+      "long_name": "cell_y_size_at_u_location",
+      "comment": "nonuniform grid spacing",
+      "units": "m",
+      "coverage_content_type": "coordinate"
+   },
+   {
+      "name": "DYC",
+      "long_name": "cell_y_size_at_v_location",
+      "comment": "nonuniform grid spacing",
+      "units": "m",
+      "coverage_content_type": "coordinate"
+   },
+   {
+      "name": "DXC",
+      "long_name": "cell_x_size_at_u_location",
+      "comment": "nonuniform grid spacing",
+      "units": "m",
+      "coverage_content_type": "coordinate"
+   },
+   {
+      "name": "DYU",
+      "long_name": "cell_y_size_at_f_location",
+      "comment": "nonuniform grid spacing",
+      "units": "m",
+      "coverage_content_type": "coordinate"
+   },
+   {
+      "name": "DXV",
+      "long_name": "cell_x_size_at_f_location",
+      "comment": "nonuniform grid spacing",
+      "units": "m",
+      "coverage_content_type": "coordinate"
+   },
+   {
+      "name": "XC",
+      "standard_name": "longitude",
+      "long_name": "longitude of tracer grid cell center",
+      "comment": "nonuniform grid spacing",
+      "units": "degrees_east",
+      "bounds": "XC_bnds",
+      "coverage_content_type": "coordinate"
+   },
+   {
+      "name": "YC",
+      "standard_name": "latitude",
+      "long_name": "latitude of tracer grid cell center",
+      "units": "degrees_north",
+      "comment": "nonuniform grid spacing",
+      "bounds": "YC_bnds",
+      "coverage_content_type": "coordinate"
+   },
+   {
+      "name": "XC_bnds",
+      "long_name": "longitudes of tracer grid cell corners",
+      "comment": "Bounds array follows CF conventions. XC_bnds[i,j,0] = 'southwest' corner (j-1, i-1), XC_bnds[i,j,1] = 'southeast' corner (j-1, i+1), XC_bnds[i,j,2] = 'northeast' corner (j+1, i+1), XC_bnds[i,j,3]  = 'northwest' corner (j+1, i-1). Note: 'southwest', 'southeast', northwest', and 'northeast' do not correspond to geographic orientation but are used for convenience to describe the computational grid. See MITgcm dcoumentation for details.",
+      "coverage_content_type": "coordinate"
+   },
+   {
+      "name": "YC_bnds",
+      "long_name": "latitudes of tracer grid cell corners",
+      "comment": "Bounds array follows CF conventions. YC_bnds[i,j,0] = 'southwest' corner (j-1, i-1), YC_bnds[i,j,1] = 'southeast' corner (j-1, i+1), YC_bnds[i,j,2] = 'northeast' corner (j+1, i+1), YC_bnds[i,j,3]  = 'northwest' corner (j+1, i-1). Note: 'southwest', 'southeast', northwest', and 'northeast' do not correspond to geographic orientation but are used for convenience to describe the computational grid. See MITgcm dcoumentation for details.",
+      "coverage_content_type": "coordinate"
+   },
+   {
+      "name": "XG",
+      "standard_name": "longitude",
+      "long_name": "longitude of 'southwest' corner of tracer grid cell",
+      "comment": "Nonuniform grid spacing. Note: 'southwest' does not correspond to geographic orientation but is used for convenience to describe the computational grid. See MITgcm dcoumentation for details.",
+      "units": "degrees_east",
+      "coverage_content_type": "coordinate"
+   },
+   {
+      "name": "YG",
+      "standard_name": "latitude",
+      "long_name": "latitude of 'southwest' corner of tracer grid cell",
+      "comment": "Nonuniform grid spacing. Note: 'southwest' does not correspond to geographic orientation but is used for convenience to describe the computational grid. See MITgcm dcoumentation for details.",
+      "units": "degrees_north",
+      "coverage_content_type": "coordinate"
+   },      
+   {
+      "name": "Z",
+      "standard_name": "depth",
+      "long_name": "depth of tracer grid cell center",
+      "comment": "Non-uniform vertical spacing.",
+      "units": "m",
+      "positive": "up",
+      "bounds": "Z_bnds",
+      "coverage_content_type": "coordinate"
+   },
+   {
+      "name": "Z_bnds",
+      "long_name": "depths of tracer grid cell upper and lower interfaces",
+      "comment": "One pair of depths for each vertical level.",
+      "units": "m",
+      "positive" : "up",
+      "coverage_content_type": "coordinate"
+   },
+   {
+      "name": "Zp1",
+      "standard_name": "depth",
+      "long_name": "depth of tracer grid cell interface",
+      "comment": "Contains one element more than the number of vertical layers. First element is 0m, the depth of the upper interface of the surface grid cell. Last element is the depth of the lower interface of the deepest grid cell.",
+      "units": "m",
+      "positive" : "up",
+      "coverage_content_type": "coordinate"
+   },
+   {
+      "name": "Zl",
+      "standard_name": "depth",
+      "long_name": "depth of tracer grid cell upper interface",
+      "comment": "First element is 0m, the depth of the upper interface of the surface grid cell. Last element is the depth of the upper interface of the deepest grid cell.",
+      "units": "m",
+      "positive" : "up",
+      "coverage_content_type": "coordinate"
+   },
+   {
+      "name": "Zu",
+      "standard_name": "depth",
+      "long_name": "depth of tracer grid cell lower interface",
+      "comment": "First element is 10m, the depth of lower interface of the surface grid cell. Last element is the depth of the lower interface of the deepest grid cell.",
+      "units": "m",
+      "positive" : "up",
+      "coverage_content_type": "coordinate"
+   }
+]
