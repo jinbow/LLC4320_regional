@@ -1,7 +1,9 @@
 
 # LLC4320_regional
 
-A tool to convert the regional LLC4320 data to NetCDF files. Without modification, it only works within the AMES supercomputer.
+A tool to convert the subset regional LLC4320 data to NetCDF files. Without modification, it only works within the AMES supercomputer.
+
+Writen by Jinbo Wang to support the SWOT AdAC pre-launch activities.
 
 ## Prerequisites
 
