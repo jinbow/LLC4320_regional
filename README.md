@@ -69,7 +69,7 @@ The script processes data for the following regions:
 
 The metadata for these regions is defined in the `names` dictionary within the script.
 
-The output has been published on podaac: `https://podaac.jpl.nasa.gov/cloud-datasets?search=Pre-SWOT%20Level-4%20Hourly%20MITgcm%20LLC4320`
+The output has been published on podaac: [https://podaac.jpl.nasa.gov/cloud-datasets?search=Pre-SWOT%20Level-4%20Hourly%20MITgcm%20LLC4320]
 
 ## Function Descriptions
 
